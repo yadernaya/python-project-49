@@ -8,10 +8,11 @@ def greet():
 
 def main():
     greet()
+    print(welcome_user())
 
 if __name__ == '__main__':
     main()
     
-print(welcome_user())
+
 
 
