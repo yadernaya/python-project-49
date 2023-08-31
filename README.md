@@ -5,3 +5,5 @@
 
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/97e008e59d0facc7c46d/maintainability)](https://codeclimate.com/github/yadernaya/python-project-49/maintainability)
+
+https://asciinema.org/a/wszytvT7fZq59Y27xZJr0GNFd
