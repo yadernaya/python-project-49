@@ -11,7 +11,7 @@ def greet():
 def welcome_user():
     global name
     name = prompt.string('May I have your name? ')
-    return ('Hello, ' + name + '!')
+    return (f'Hello, {name}!')
 
 
 def rules_of_game():
