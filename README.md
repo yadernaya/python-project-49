@@ -8,3 +8,4 @@
 
 https://asciinema.org/a/wszytvT7fZq59Y27xZJr0GNFd #brain-even
 https://asciinema.org/a/XiG51sSlHsuSdHl1CZ5eaJJ5a #brain-calc
+https://asciinema.org/a/GDLjiKZvKpQTibjpiDbv7yo2g #brain-gcd
