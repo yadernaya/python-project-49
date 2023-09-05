@@ -36,7 +36,7 @@ def calc_game():
       if answer == str(result):
         print('Correct!')
         if count == 3:
-          print('Congratulations, ', name, '!')
+          print(f'Congratulations, {name}!')
           break
       else:
         print(f'"{answer}" is wrong answer ;(. Correct answer was {result}.\nLet\'s try again, {name}!')

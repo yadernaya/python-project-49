@@ -27,7 +27,7 @@ def gcd_game():
             print('Correct!')
             count += 1
             if count == 3:
-                print('Congratulations, ', name, '!')
+                print(f'Congratulations, {name}!')
                 break
         else:
             print(f'"{answer}" is wrong answer ;(.\nLet\'s try again, {name}')
