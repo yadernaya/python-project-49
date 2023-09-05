@@ -31,12 +31,12 @@ def guess_even_number():
       print(f'Congratulations, {name}!')
       break
     if (is_even(random_num) == True and answer == 'no'):
-      print(f'"{answer}" is wrong answer ;(. Correct answer was "yes".\nLet\'s try again, {name}')
+      print(f'"{answer}" is wrong answer ;(. Correct answer was "yes".\nLet\'s try again, {name}!')
       break
     if (is_even(random_num) == False and answer == 'yes'):
-      print(f'"{answer}" is wrong answer ;(. Correct answer was "no".\nLet\'s try again, {name}')
+      print(f'"{answer}" is wrong answer ;(. Correct answer was "no".\nLet\'s try again, {name}!')
       break
     if answer != 'yes' and answer != 'no':
-      print(f'"{answer}" is wrong answer ;(.\nLet\'s try again, {name}')
+      print(f'"{answer}" is wrong answer ;(.\nLet\'s try again, {name}!')
       break
 

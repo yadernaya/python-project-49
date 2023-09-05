@@ -35,6 +35,6 @@ def brain_prime():
                 print(f'Congratulations, {name}!')
                 break
         else:
-            print(f'"{answer}" is wrong answer ;(.\nLet\'s try again, {name}')
+            print(f'"{answer}" is wrong answer ;(.\nLet\'s try again, {name}!')
             break
 
