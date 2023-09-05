@@ -24,7 +24,7 @@ def calc_game():
       num1 = randint(20, 40)
       num2 = randint(1, 20)
       random_oper = choice(operators)
-      print('Question: ', num1, random_oper , num2)
+      print(f'Question: {num1}{random_oper}{num2}')
       count += 1
       if random_oper == '+':
         result = operator.add(num1, num2)

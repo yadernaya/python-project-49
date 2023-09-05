@@ -22,7 +22,7 @@ def guess_even_number():
   count = 0
   while count <= 3:
     random_num = randint(0,100)
-    print('Question: ', random_num)
+    print(f'Question: {random_num}')
     answer = prompt.string('Your answer: ')
     if (is_even(random_num) == True and answer == 'yes') or (is_even(random_num) == False and answer == 'no'):
       print('Correct!')
