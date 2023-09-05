@@ -10,3 +10,4 @@ https://asciinema.org/a/wszytvT7fZq59Y27xZJr0GNFd #brain-even
 https://asciinema.org/a/XiG51sSlHsuSdHl1CZ5eaJJ5a #brain-calc
 https://asciinema.org/a/GDLjiKZvKpQTibjpiDbv7yo2g #brain-gcd
 https://asciinema.org/a/LmbzQKTYvSOvPiAah268dFv86 #brain-progression
+https://asciinema.org/a/71GHQdBr8xjtjR46D2o9fuIqD #brain-prime
