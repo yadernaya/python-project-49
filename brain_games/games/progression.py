@@ -28,7 +28,7 @@ def progression_game():
             progressive.append(symbol)
         x_number = progressive[index]
         progressive[index] = '..'
-        print('Question: ', *progressive)
+        print('Question:', *progressive)
         answer = prompt.string('Your answer: ' )
         if answer == str(x_number):
             print('Correct!')
