@@ -22,7 +22,7 @@ def progression_game():
         start = randint(0,10)
         progr_length = randint(5, 9)
         end = start + progr_length*step
-        index = randint(1, 8)
+        index = progr_length - 1
         progressive = []
         for symbol in range(start, end, step):
             progressive.append(symbol)
