@@ -11,7 +11,7 @@ def greet():
 
 
 def rules_of_game():
-    print('Answer "yes" if the number is prime. Otherwise answer "no".')
+    print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
 
 def is_simple(x):
