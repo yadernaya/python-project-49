@@ -20,7 +20,8 @@ def progression_game():
     while count <= 3:
         step = randint(1,6)
         start = randint(0,10)
-        end = start + 9*step
+        progr_length = randint(5, 9)
+        end = start + progr_length*step
         index = randint(1, 8)
         progressive = []
         for symbol in range(start, end, step):
