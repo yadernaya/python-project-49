@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from brain_games.games.gcd import greet, rules, gcd_game, name
+from brain_games.games.gcd import greet, rules, gcd_game
 
 
 def main():

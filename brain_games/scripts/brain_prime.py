@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from brain_games.games.prime import greet, rules_of_game, brain_prime, name
+from brain_games.games.prime import greet, rules_of_game, brain_prime
 
 
 def main():
