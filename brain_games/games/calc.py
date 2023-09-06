@@ -5,6 +5,7 @@ import operator
 
 name = ''
 
+
 def greet():
     print('Welcome to the Brain Games!')
     global name
@@ -21,26 +22,23 @@ def calc_game():
     count = 0
     operators = ('+', '-', '*')
     while count <= attempts:
-      num1 = randint(20, 40)
-      num2 = randint(1, 20)
-      random_oper = choice(operators)
-      print(f'Question: {num1} {random_oper} {num2}')
-      count += 1
-      if random_oper == '+':
-        result = operator.add(num1, num2)
-      if random_oper == '-':
-        result = operator.sub(num1, num2)
-      if random_oper == '*':
-        result = operator.mul(num1, num2)
-      answer = prompt.string('Your answer: ')
-      if answer == str(result):
-        print('Correct!')
-        if count == 3:
-          print(f'Congratulations, {name}!')
-          break
-      else:
-        print(f'"{answer}" is wrong answer ;(. Correct answer was {result}.\nLet\'s try again, {name}!')
-        break
-
-
-
+        num1 = randint(20, 40)
+        num2 = randint(1, 20)
+        random_oper = choice(operators)
+        print(f'Question: {num1} {random_oper} {num2}')
+        count += 1
+        if random_oper == '+':
+            result = operator.add(num1, num2)
+        if random_oper == '-':
+            result = operator.sub(num1, num2)
+        if random_oper == '*':
+            result = operator.mul(num1, num2)
+        answer = prompt.string('Your answer: ')
+        if answer == str(result):
+            print('Correct!')
+            if count == 3:
+                print(f'Congratulations, {name}!')
+                break
+        else:
+            print(f'"{answer}" is wrong answer ;(.\nLet\'s try again, {name}!')
+            break

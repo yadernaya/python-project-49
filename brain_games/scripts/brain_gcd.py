@@ -2,6 +2,7 @@
 
 from brain_games.games.gcd import greet, rules, gcd_game, name
 
+
 def main():
     greet()
     rules()

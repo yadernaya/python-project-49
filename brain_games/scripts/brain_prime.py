@@ -2,6 +2,7 @@
 
 from brain_games.games.prime import greet, rules_of_game, brain_prime, name
 
+
 def main():
     greet()
     rules_of_game()

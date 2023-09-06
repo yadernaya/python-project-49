@@ -2,6 +2,7 @@
 
 from brain_games.games.progression import greet, name, rules, progression_game
 
+
 def main():
     greet()
     rules()

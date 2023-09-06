@@ -4,6 +4,7 @@ import prompt
 
 name = ''
 
+
 def greet():
     print('Welcome to the Brain Games!')
     global name
@@ -18,10 +19,10 @@ def rules():
 def gcd_game():
     count = 0
     while count <= 3:
-        num1 = randint(1,30)
-        num2 = randint(1,30)
+        num1 = randint(1, 30)
+        num2 = randint(1, 30)
         print(f'Question: {num1} {num2}')
-        answer = prompt.string('Your answer: ' )
+        answer = prompt.string('Your answer: ')
         result = math.gcd(num1, num2)
         if answer == str(result):
             print('Correct!')
