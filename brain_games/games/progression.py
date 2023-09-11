@@ -21,7 +21,7 @@ def progression_game():
         step = randint(1, 6)
         start = randint(0, 10)
         progr_length = randint(5, 9)
-        end = start + progr_length*step
+        end = start + progr_length * step
         index = progr_length - 1
         progressive = []
         for symbol in range(start, end, step):

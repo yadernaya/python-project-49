@@ -28,7 +28,7 @@ def brain_prime():
     while count <= 3:
         number = randint(2, 50)
         print(f'Question: {number}')
-        answer = prompt.string('Your answer: ' )
+        answer = prompt.string('Your answer: ')
         if answer == 'yes' and is_simple(number) == True or answer == 'no' and is_simple(number) == False:
             print('Correct!')
             count += 1
