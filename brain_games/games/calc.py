@@ -12,7 +12,7 @@ operators = {
     '*': operator.mul
 }
 
-def even_game():
+def calc_game():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print('Hello,', name)
