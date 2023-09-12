@@ -12,6 +12,7 @@ operators = {
     '*': operator.mul
 }
 
+
 def calc_game():
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')

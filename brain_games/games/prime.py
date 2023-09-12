@@ -19,8 +19,8 @@ def is_simple(x):
     numbers = range(2, x)
     for num in numbers:
         if x % num == 0:
-            return False
-    return True
+            return 'no'
+    return 'yes'
 
 
 def brain_prime():
@@ -29,12 +29,12 @@ def brain_prime():
         number = randint(2, 50)
         print(f'Question: {number}')
         answer = prompt.string('Your answer: ')
-        if (answer == 'yes' and is_simple(number) == True) or (answer == 'no' and is_simple(number) == False):
+        result = is_simple(number)
+        if answer == result:
             print('Correct!')
             count += 1
-            if count == 3:
-                print(f'Congratulations, {name}!')
         else:
             print(f'"{answer}" is wrong answer ;(.')
             print(f"Let's try again, {name}!")
             break
+    print(f'Congratulations, {name}!')

@@ -26,17 +26,17 @@ def progression_game():
         progressive = []
         for symbol in range(start, end, step):
             progressive.append(symbol)
-        x_number = progressive[index]
+        x_num = progressive[index]
         progressive[index] = '..'
         print('Question:', *progressive)
         answer = prompt.string('Your answer: ')
-        if answer == str(x_number):
+        if answer == str(x_num):
             print('Correct!')
             count += 1
             if count == 3:
                 print(f'Congratulations, {name}!')
                 break
         else:
-            print(f"'{answer}' is wrong answer ;(.Correct answer was '{x_number}'")
+            print(f"'{answer}' is wrong answer ;(.Correct answer was '{x_num}'")
             print(f"Let's try again, {name}!")
             break
