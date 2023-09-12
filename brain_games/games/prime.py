@@ -24,17 +24,17 @@ def is_simple(x):
 
 
 def brain_prime():
-    count = 0
+    count = 1
     while count <= 3:
         number = randint(2, 50)
         print(f'Question: {number}')
         answer = prompt.string('Your answer: ')
-        if answer == 'yes' and is_simple(number) == True or answer == 'no' and is_simple(number) == False:
+        if (answer == 'yes' and is_simple(number) == True) or (answer == 'no' and is_simple(number) == False):
             print('Correct!')
             count += 1
             if count == 3:
                 print(f'Congratulations, {name}!')
-                break
         else:
-            print(f'"{answer}" is wrong answer ;(.\nLet\'s try again, {name}!')
+            print(f'"{answer}" is wrong answer ;(.')
+            print(f"Let's try again, {name}!")
             break

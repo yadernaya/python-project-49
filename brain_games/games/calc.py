@@ -6,40 +6,30 @@ import operator
 name = ''
 
 
-def greet():
+operators = {
+    '+': operator.add,
+    '-': operator.sub,
+    '*': operator.mul
+}
+
+def even_game():
     print('Welcome to the Brain Games!')
-    global name
     name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
-
-
-def rules_of_game():
+    print('Hello,', name)
     print('What is the result of the expression?')
-
-
-def calc_game():
-    attempts = 3
-    count = 0
-    operators = ('+', '-', '*')
-    while count <= attempts:
-        num1 = randint(20, 40)
-        num2 = randint(1, 20)
-        random_oper = choice(operators)
-        print(f'Question: {num1} {random_oper} {num2}')
-        count += 1
-        if random_oper == '+':
-            result = operator.add(num1, num2)
-        if random_oper == '-':
-            result = operator.sub(num1, num2)
-        if random_oper == '*':
-            result = operator.mul(num1, num2)
+    attempt = 1
+    while attempt <= 3:
+        number1 = randint(1, 100)
+        number2 = randint(1, 100)
+        operator = choice(list(operators))
+        print(f'Question: {number1} {operator} {number2}')
         answer = prompt.string('Your answer: ')
-        if answer == str(result):
+        result = str(operators.get(operator)(number1, number2))
+        if answer == result:
             print('Correct!')
-            if count == 3:
-                print(f'Congratulations, {name}!')
-                break
-        else:
-            print(f'"{answer}" is wrong answer ;(.')
-            print(f"Let\'s try again, {name}!")
+        attempt += 1
+        if answer != result:
+            print(f"{answer} is wrong answer ;(. Correct answer was {result}.")
+            print(f"Let's try again, {name}!")
             break
+    print(f'Congratulations, {name}!')

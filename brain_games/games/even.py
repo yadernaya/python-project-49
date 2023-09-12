@@ -20,15 +20,15 @@ def even_game():
         result = prompt.string('Your answer: ')
         if result == 'yes':
             result = True
-            antiresult = 'no'
+            anrslt = 'no'
         if result == 'no':
             result = False
-            antiresult = 'yes'
+            anrslt = 'yes'
         if is_even(number) == result:
             print('Correct!')
         attempt += 1
         if is_even(number) != result:
-            print(f"{result} is wrong answer ;(. Correct answer was {antiresult}.")
+            print(f"{result} is wrong answer ;(. Correct answer was {anrslt}.")
             print(f"Let's try again, {name}!")
             break
     print(f'Congratulations, {name}!')
